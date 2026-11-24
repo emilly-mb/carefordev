@@ -1,6 +1,6 @@
 # CareForDev — execução local
 
-Projeto com interface web responsiva (Início e Saúde) e app React Native. **Não usa banco de dados nem API**: o perfil e a pontuação ficam no navegador (`localStorage`) e os gráficos da aba Saúde vêm de um JSON estático gerado em Python.
+Projeto com interface web responsiva (Início e Saúde) e app React Native.
 
 ## 1. Requisitos
 - Python 3.10 ou superior (só para servir as páginas e gerar o JSON)
@@ -15,7 +15,6 @@ python -m http.server 8000 --directory paginas
 - Início: http://127.0.0.1:8000/
 - Saúde: http://127.0.0.1:8000/saude.html
 
-Abra pelo endereço do servidor, não com duplo clique no HTML (`file://`): o navegador bloqueia a leitura do JSON dos gráficos.
 
 Para abrir em outro aparelho na mesma rede Wi-Fi, use `python -m http.server 8000 --bind 0.0.0.0 --directory paginas` e acesse `http://IP-DO-PC:8000` (veja o IP com `ipconfig`).
 
