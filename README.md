@@ -1,6 +1,53 @@
 # CareForDev — execução local
 
 Projeto com interface web responsiva (Início e Saúde) e app React Native.
+Instalar python:
+-winget install Python.Python.3.12
+
+Regenerar os dados dos gráficos:
+python dados\gerar_dados_saude.py
+
+Abrir o site pelo servidor;
+use esse código no terminal do projeto:
+python -m http.server 8000 --directory paginas
+
+Baixar o node.js:
+winget install OpenJS.NodeJS.LTS - para Windows
+
+Atualizar path:
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+
+Instalar expo go no celular para versão mobile
+
+Ir até o path app_rn onde esta configurado para mobile e instalar npm install
+
+Atualizar para expo sdk 54
+No terminal do projeto: npx expo install expo@^54.0.0 --fix
+verificando se ocorreu a atualização certo: 
+
+Atualizar expo: npx expo install expo-font
+reinstalar dependências caso de erro: 
+Remove-Item -Recurse -Force node_modules
+Remove-Item -Force package-lock.json
+npm install
+
+Conferir se funcionou: npx expo-doctor@latest
+
+Iniciar app para android/iphone:
+npx expo start
+
+
+Instalar versão recente: 
+npm install -g expo-cli
+
+Iniciar app:
+npx expo start --tunnel
+
+
+git add .
+git commit -m "Commit dia 24.11"
+git push -u origin main
+
 
 ## 1. Requisitos
 - Python 3.10 ou superior (só para servir as páginas e gerar o JSON)
@@ -34,7 +81,7 @@ python gerar_dados_saude.py --real   # DATASUS/SINAN via pysus (CBO 2124-05, 202
 ```
 O script grava o mesmo arquivo em `paginas/data/dados_saude.json` e `app_rn/src/data/dados_saude.json`. O JSON segue o diagrama de classes: `doencasOcupacionais` (nome, sintomas, fatorRisco), `estatisticas` (titulo, valor, fonte, anoReferencia) e `graficos` (resultado de `gerarGrafico()`). Cada gráfico traz `tipo` (`bar`, `doughnut` ou `line`), `horizontal`, `labels` e `series`, que casam com `data.labels` e `data.datasets` do Chart.js. A web usa o tipo indicado; o app React Native desenha barras nativas (Chart.js exige `<canvas>`/DOM).
 
-Os dados gerados sem `--real` são fictícios (`"exemplo": true`) e a página exibe esse aviso. Não os apresente como estatísticas oficiais. No modo real, revise os nomes de colunas e rótulos no topo do script antes de usar os números.
+Os dados gerados são fictícios, estão descritos na página Saúde do projeto.
 
 ## Estrutura principal
 - `paginas/index.html` + `index_script.js`: painel inicial, perfil e pontuação (localStorage).
