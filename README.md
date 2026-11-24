@@ -2,52 +2,64 @@
 
 Projeto com interface web responsiva (Início e Saúde) e app React Native.
 Instalar python:
+```powershell
 -winget install Python.Python.3.12
+```
 
 Regenerar os dados dos gráficos:
+```powershell
 python dados\gerar_dados_saude.py
+```
 
 Abrir o site pelo servidor;
 use esse código no terminal do projeto:
+```powershell
 python -m http.server 8000 --directory paginas
+```
 
 Baixar o node.js:
-winget install OpenJS.NodeJS.LTS - para Windows
+```powershell
+winget install OpenJS.NodeJS.LTS
+```
 
 Atualizar path:
+```powershell
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+```
 
 Instalar expo go no celular para versão mobile
 
-Ir até o path app_rn onde esta configurado para mobile e instalar npm install
+- Ir até o path app_rn onde esta configurado para mobile e instalar npm install
 
 Atualizar para expo sdk 54
-No terminal do projeto: npx expo install expo@^54.0.0 --fix
-verificando se ocorreu a atualização certo: 
+```powershell
+npx expo install expo@^54.0.0 --fix
+```
+Verificando se ocorreu a atualização certo: 
 
-Atualizar expo: npx expo install expo-font
-reinstalar dependências caso de erro: 
+Atualizar expo:
+```powershell
+npx expo install expo-font
+```
+Reinstalar dependências caso de erro: 
+```powershell
 Remove-Item -Recurse -Force node_modules
 Remove-Item -Force package-lock.json
 npm install
+```
 
-Conferir se funcionou: npx expo-doctor@latest
-
-Iniciar app para android/iphone:
-npx expo start
-
-
+Conferir se funcionou: 
+```powershell
+npx expo-doctor@latest
+```
 Instalar versão recente: 
+```powershell
 npm install -g expo-cli
-
+```
 Iniciar app:
+```powershell
 npx expo start --tunnel
-
-
-git add .
-git commit -m "Commit dia 24.11"
-git push -u origin main
-
+```
 
 ## 1. Requisitos
 - Python 3.10 ou superior (só para servir as páginas e gerar o JSON)
