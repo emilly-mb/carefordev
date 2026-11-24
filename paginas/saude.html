@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f3ede2">
+  <title>CareForDev - Saúde</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <main class="app-container">
+    <header class="header">
+      <div><h1>Saúde em dados.</h1><p class="subtitle">Informação também é uma forma de prevenção.</p></div>
+      <span class="bell-btn" aria-hidden="true"><i class="fa-regular fa-bell"></i></span>
+    </header>
+    <div class="health-grid">
+    <section class="health-hero">
+      <span class="card-tag">PANORAMA OCUPACIONAL</span>
+      <h2>Como o trabalho afeta quem desenvolve?</h2>
+      <p>Explore dados sobre as condições mais frequentes na área de tecnologia.</p>
+    </section>
+    <section class="chart-card">
+      <span class="card-tag">INCIDÊNCIA REPORTADA</span>
+      <h2 id="chart-title">Desconfortos mais comuns</h2>
+      <label class="sr-only" for="health-category">Escolha uma categoria</label>
+      <select id="health-category" class="health-select"><option value="">Carregando categorias...</option></select>
+      <p id="chart-description" class="chart-description">Indicadores ocupacionais</p>
+      <div class="chart-wrapper"><canvas id="health-chart" role="img" aria-label="Gráfico de indicadores de saúde">Seu navegador não suporta gráficos. Os dados estão em data/dados_saude.json.</canvas></div>
+      <ul id="health-details" class="health-details" aria-label="Doenças do gráfico"></ul>
+      <p id="health-source" class="source-note">Carregando dados...</p>
+      <p id="health-status" class="status-note" role="status"></p>
+    </section>
+    </div>
+    <nav class="bottom-nav" aria-label="Navegação principal">
+      <a href="index.html" class="nav-item"><i class="fa-solid fa-house"></i><span>Início</span></a>
+      <a href="index.html#rotina" class="nav-item"><i class="fa-solid fa-dumbbell"></i><span>Exercícios</span></a>
+      <a href="saude.html" class="nav-item active" aria-current="page"><i class="fa-solid fa-chart-line"></i><span>Saúde</span></a>
+      <a href="index.html#perfil" class="nav-item"><i class="fa-regular fa-user"></i><span>Perfil</span></a>
+    </nav>
+  </main>
+  <script src="saude.js"></script>
+</body>
+</html>

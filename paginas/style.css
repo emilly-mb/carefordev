@@ -1,0 +1,365 @@
+:root {
+    --bg-color: #F4F3ED;
+    --card-green: #1C4233;
+    --text-dark: #1A1A1A;
+    --text-muted: #737871;
+    --card-white: #FFFFFF;
+    --accent-green: #406A57;
+    --light-green: #E2ECE7;
+    --border-radius: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Layout Base (Mobile-First) */
+.app-container {
+    width: 100%;
+    max-width: 480px;
+    height: 100vh;
+    background-color: var(--bg-color);
+    padding: 20px 20px 80px 20px;
+    overflow-y: auto;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.header h1 { font-size: 22px; font-weight: 700; }
+.subtitle { font-size: 13px; color: var(--text-muted); }
+
+.bell-btn {
+    background: #fff;
+    color: var(--text-dark);
+    border: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    transition: background-color 0.2s, color 0.2s;
+}
+/* Botão ativo/usado fica verde */
+.bell-btn:hover, .bell-btn:focus-visible, .bell-btn:active {
+    background-color: var(--accent-green);
+    color: #fff;
+}
+
+.dashboard-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Cards */
+.card-jornada {
+    background-color: var(--card-green);
+    color: white;
+    border-radius: var(--border-radius);
+    padding: 20px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.card-tag { font-size: 10px; letter-spacing: 1px; color: #92B1A4; font-weight: 600; }
+.card-header h2 { font-size: 18px; margin-top: 4px; }
+
+.gear-icon {
+    background: rgba(255, 255, 255, 0.1);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 14px;
+    border-radius: 12px;
+}
+
+.info-label { display: block; font-size: 11px; color: #92B1A4; }
+
+.progress-bar-container {
+    background: rgba(255, 255, 255, 0.2);
+    height: 6px;
+    border-radius: 3px;
+    margin-top: 16px;
+    overflow: hidden;
+}
+
+.progress-bar { background-color: #83B89F; height: 100%; transition: width 0.4s ease; }
+.progress-labels { display: flex; justify-content: space-between; font-size: 11px; color: #92B1A4; margin-top: 8px; }
+
+/* Timeline de Pausas */
+.section-title h3 { font-size: 11px; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.5px; }
+.section-subtitle { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+
+.badge {
+    background-color: var(--light-green);
+    color: var(--card-green);
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.timeline { position: relative; padding-left: 45px; }
+.timeline-item { position: relative; margin-bottom: 16px; }
+.time { position: absolute; left: -45px; top: 18px; font-size: 12px; color: var(--text-muted); font-weight: 600; }
+.dot { position: absolute; left: -10px; top: 22px; width: 8px; height: 8px; border-radius: 50%; background-color: #C2C5BC; transition: background-color 0.3s; }
+.dot.active { background-color: var(--accent-green); }
+.timeline-item.done .time { color: var(--accent-green); }
+
+.activity-card {
+    background: var(--card-white);
+    border-radius: 16px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: transform 0.2s;
+}
+
+.activity-icon {
+    width: 40px; height: 40px;
+    background-color: #F7F7F5;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--accent-green);
+}
+
+.activity-details h4 { font-size: 14px; }
+.activity-details p { font-size: 11px; color: var(--text-muted); }
+
+.btn-play, .btn-check {
+    margin-left: auto; width: 36px; height: 36px;
+    border-radius: 50%; border: none; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+}
+
+.btn-play { background: transparent; border: 1px solid #E0E0E0; color: var(--card-green); transition: background-color 0.2s, color 0.2s, border-color 0.2s; }
+.btn-play:hover, .btn-play:focus-visible, .btn-play:active {
+    background-color: var(--accent-green); border-color: var(--accent-green); color: #fff;
+}
+.btn-check.done { background-color: var(--accent-green); color: white; }
+
+/* Estilização das Abas de Saúde */
+.tabs-container {
+    display: flex; gap: 8px; overflow-x: auto; padding-bottom: 8px; margin-bottom: 20px;
+}
+
+.tab-btn {
+    background-color: var(--card-white);
+    border: 1px solid #E0E0E0;
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+}
+
+.tab-btn.active {
+    background-color: var(--card-green);
+    color: white;
+    border-color: var(--card-green);
+}
+
+.chart-card {
+    background: var(--card-white);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    margin-bottom: 20px;
+}
+
+.chart-header { margin-bottom: 15px; }
+.chart-header h3 { font-size: 16px; color: var(--text-dark); }
+.chart-header p { font-size: 12px; color: var(--text-muted); }
+
+.chart-wrapper {
+    position: relative;
+    width: 100%;
+    height: 260px;
+}
+
+/* Navegação Inferior */
+.bottom-nav {
+    position: fixed; bottom: 12px; left: 50%; transform: translateX(-50%);
+    width: calc(100% - 40px); max-width: 440px; background: white;
+    border-radius: 25px; display: flex; justify-content: space-around; padding: 12px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08); z-index: 100;
+}
+
+.nav-item:hover, .nav-item:focus-visible { color: var(--accent-green); }
+.nav-item { text-decoration: none; color: var(--text-muted); display: flex; flex-direction: column; align-items: center; font-size: 11px; gap: 4px; }
+.nav-item.active { color: var(--accent-green); font-weight: 600; }
+
+/* Modais */
+.modal {
+    display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5); align-items: center; justify-content: center; z-index: 1000;
+}
+.modal.active { display: flex; }
+.modal-content { background: white; border-radius: 20px; padding: 24px; width: 90%; max-width: 400px; }
+.form-group { margin-bottom: 12px; }
+.form-group label { display: block; font-size: 12px; color: var(--text-muted); margin-bottom: 4px; }
+.form-group input { width: 100%; padding: 10px; border: 1px solid #DDD; border-radius: 8px; }
+.modal-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px; }
+.btn-save { background: var(--card-green); color: white; border: none; padding: 10px 16px; border-radius: 8px; cursor: pointer; }
+.btn-cancel { background: #EEE; border: none; padding: 10px 16px; border-radius: 8px; cursor: pointer; }
+
+/* Página Saúde - visual alinhado à referência enviada */
+.health-hero {
+    position: relative;
+    overflow: hidden;
+    background: #c9dce8;
+    border-radius: var(--border-radius);
+    padding: 22px;
+    margin: 22px 0 16px;
+    min-height: 150px;
+}
+.health-hero::after {
+    content: "";
+    position: absolute;
+    width: 150px; height: 150px;
+    border: 18px solid rgba(255,255,255,.22);
+    border-radius: 50%;
+    right: -35px; bottom: -75px;
+}
+.health-hero h2 { font-size: 21px; line-height: 1.25; max-width: 330px; margin: 8px 0; }
+.health-hero p { color: #526a76; font-size: 13px; max-width: 330px; }
+.chart-card h2 { font-size: 18px; margin: 8px 0 12px; }
+.health-select {
+    width: 100%; padding: 11px 13px; border: 1px solid #e1e6e1;
+    border-radius: 10px; background: #f8f9f6; color: var(--text-dark);
+    font-size: 13px; margin: 8px 0 12px;
+}
+.chart-description { color: var(--text-muted); font-size: 12px; margin-bottom: 8px; }
+.source-note, .status-note { color: var(--text-muted); font-size: 10px; margin-top: 12px; line-height: 1.5; }
+.status-note { color: #9a5a22; font-weight: 600; }
+.sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+
+.health-details { list-style: none; margin-top: 16px; display: grid; gap: 8px; }
+.health-details[hidden] { display: none; }
+.health-details li {
+    display: flex; flex-direction: column; gap: 2px;
+    background: #f8f9f6; border-radius: 12px; padding: 10px 12px;
+    font-size: 12px; color: var(--text-muted); line-height: 1.4;
+}
+.health-details strong { color: var(--text-dark); font-size: 13px; }
+.health-grid { display: block; }
+
+/* ===== Celular (até 767px): coluna única, como antes ===== */
+@media (max-width: 767px) {
+  body { align-items: stretch; }
+  .app-container { min-height: 100vh; height: auto; padding: 28px 16px 105px; }
+  .header h1 { font-size: 21px; }
+  .health-hero { margin-top: 20px; }
+  .chart-card { padding: 17px; }
+  .chart-wrapper { height: 230px; }
+  .bottom-nav { width: calc(100% - 24px); bottom: 8px; }
+}
+
+/* ===== Tablet e computador (768px+) ===== */
+@media (min-width: 768px) {
+  body { align-items: flex-start; padding: 32px; }
+  .app-container {
+    max-width: 1000px; height: auto; min-height: 85vh; overflow: visible;
+    border-radius: 28px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); padding: 40px;
+  }
+  .header h1 { font-size: 28px; }
+  .subtitle { font-size: 15px; }
+  .bell-btn { width: 46px; height: 46px; font-size: 16px; }
+  .dashboard-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 32px; align-items: start; }
+  .health-hero { margin: 24px 0 20px; }
+  .chart-wrapper { height: 380px; }
+  .bottom-nav {
+    position: static; transform: none; width: 100%; max-width: 560px;
+    margin: 32px auto 0; border: 1px solid #EAEAEA;
+  }
+}
+
+/* ===== Computador (1100px+): layout amplo ===== */
+@media (min-width: 1100px) {
+  body { padding: 40px 56px; }
+  .app-container { max-width: 1320px; padding: 56px 64px; }
+  .header { margin-bottom: 36px; }
+  .header h1 { font-size: 36px; }
+  .subtitle { font-size: 17px; }
+  .bell-btn { width: 54px; height: 54px; font-size: 19px; }
+
+  /* Início */
+  .dashboard-grid { grid-template-columns: minmax(380px, 460px) 1fr; gap: 48px; }
+  .card-jornada { padding: 32px; }
+  .card-tag { font-size: 12px; }
+  .card-header h2 { font-size: 24px; }
+  .gear-icon { width: 42px; height: 42px; font-size: 16px; }
+  .info-box { padding: 16px 20px; font-size: 16px; }
+  .info-label { font-size: 13px; }
+  .progress-labels { font-size: 13px; }
+  .section-title h3 { font-size: 13px; }
+  .section-subtitle h2 { font-size: 26px; }
+  .badge { font-size: 13px; padding: 6px 14px; }
+  .timeline { padding-left: 70px; }
+  .time { left: -70px; top: 28px; font-size: 15px; }
+  .dot { left: -14px; top: 33px; width: 10px; height: 10px; }
+  .timeline-item { margin-bottom: 20px; }
+  .activity-card { padding: 22px 26px; gap: 18px; border-radius: 22px; }
+  .activity-icon { width: 56px; height: 56px; font-size: 20px; }
+  .activity-details h4 { font-size: 18px; }
+  .activity-details p { font-size: 14px; }
+  .btn-play, .btn-check { width: 48px; height: 48px; font-size: 16px; }
+
+  /* Saúde: painel à esquerda, gráfico grande à direita */
+  .health-grid { display: grid; grid-template-columns: minmax(300px, 380px) 1fr; gap: 36px; align-items: start; }
+  .health-hero { margin: 0; padding: 32px; min-height: 280px; position: sticky; top: 24px; }
+  .health-hero h2 { font-size: 30px; max-width: none; }
+  .health-hero p { font-size: 15px; max-width: none; }
+  .chart-card { padding: 32px; margin-bottom: 0; }
+  .chart-card h2 { font-size: 26px; }
+  .health-select { font-size: 15px; padding: 13px 16px; max-width: 380px; }
+  .chart-description { font-size: 14px; }
+  .chart-wrapper { height: 480px; }
+  .health-details { grid-template-columns: repeat(2, 1fr); }
+  .health-details li { font-size: 13px; padding: 12px 14px; }
+  .health-details strong { font-size: 14px; }
+  .source-note, .status-note { font-size: 12px; }
+
+  .bottom-nav { max-width: 640px; padding: 16px 0; }
+  .nav-item { font-size: 14px; gap: 6px; }
+}

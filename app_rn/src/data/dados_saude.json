@@ -1,0 +1,744 @@
+{
+  "exemplo": true,
+  "gerado_em": "2026-11-24",
+  "ocupacao": "CBO 2124-05, Analista de desenvolvimento de sistemas",
+  "periodo": "2020–2026",
+  "doencasOcupacionais": [
+    {
+      "nome": "Lombalgia",
+      "sintomas": "Dor na região lombar e rigidez ao levantar",
+      "fatorRisco": "Postura inadequada"
+    },
+    {
+      "nome": "Tendinite",
+      "sintomas": "Dor e inchaço nos tendões de punhos e mãos",
+      "fatorRisco": "Movimento repetitivo"
+    },
+    {
+      "nome": "Síndrome do túnel do carpo",
+      "sintomas": "Formigamento e dormência nos dedos",
+      "fatorRisco": "Movimento repetitivo"
+    },
+    {
+      "nome": "Cervicalgia",
+      "sintomas": "Dor e tensão no pescoço",
+      "fatorRisco": "Postura inadequada"
+    },
+    {
+      "nome": "Bursite de ombro",
+      "sintomas": "Dor ao elevar o braço",
+      "fatorRisco": "Ergonomia inadequada"
+    },
+    {
+      "nome": "Ansiedade",
+      "sintomas": "Preocupação excessiva, inquietação e taquicardia",
+      "fatorRisco": "Sobrecarga e prazos"
+    },
+    {
+      "nome": "Depressão",
+      "sintomas": "Tristeza persistente, perda de interesse e fadiga",
+      "fatorRisco": "Isolamento"
+    },
+    {
+      "nome": "Burnout",
+      "sintomas": "Exaustão, cinismo e queda de desempenho",
+      "fatorRisco": "Jornada prolongada"
+    },
+    {
+      "nome": "Transtorno de adaptação",
+      "sintomas": "Irritabilidade e desânimo após mudanças",
+      "fatorRisco": "Sobrecarga e prazos"
+    },
+    {
+      "nome": "Insônia",
+      "sintomas": "Dificuldade para dormir e sono não reparador",
+      "fatorRisco": "Jornada prolongada"
+    }
+  ],
+  "estatisticas": [
+    {
+      "titulo": "Notificações de Lombalgia",
+      "valor": 39,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2020,
+      "doenca": "Lombalgia"
+    },
+    {
+      "titulo": "Notificações de Lombalgia",
+      "valor": 44,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2021,
+      "doenca": "Lombalgia"
+    },
+    {
+      "titulo": "Notificações de Lombalgia",
+      "valor": 55,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2022,
+      "doenca": "Lombalgia"
+    },
+    {
+      "titulo": "Notificações de Lombalgia",
+      "valor": 65,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2023,
+      "doenca": "Lombalgia"
+    },
+    {
+      "titulo": "Notificações de Lombalgia",
+      "valor": 69,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2024,
+      "doenca": "Lombalgia"
+    },
+    {
+      "titulo": "Notificações de Lombalgia",
+      "valor": 71,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2025,
+      "doenca": "Lombalgia"
+    },
+    {
+      "titulo": "Notificações de Lombalgia",
+      "valor": 35,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2026,
+      "doenca": "Lombalgia"
+    },
+    {
+      "titulo": "Notificações de Tendinite",
+      "valor": 33,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2020,
+      "doenca": "Tendinite"
+    },
+    {
+      "titulo": "Notificações de Tendinite",
+      "valor": 40,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2021,
+      "doenca": "Tendinite"
+    },
+    {
+      "titulo": "Notificações de Tendinite",
+      "valor": 49,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2022,
+      "doenca": "Tendinite"
+    },
+    {
+      "titulo": "Notificações de Tendinite",
+      "valor": 60,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2023,
+      "doenca": "Tendinite"
+    },
+    {
+      "titulo": "Notificações de Tendinite",
+      "valor": 59,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2024,
+      "doenca": "Tendinite"
+    },
+    {
+      "titulo": "Notificações de Tendinite",
+      "valor": 66,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2025,
+      "doenca": "Tendinite"
+    },
+    {
+      "titulo": "Notificações de Tendinite",
+      "valor": 32,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2026,
+      "doenca": "Tendinite"
+    },
+    {
+      "titulo": "Notificações de Síndrome do túnel do carpo",
+      "valor": 29,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2020,
+      "doenca": "Síndrome do túnel do carpo"
+    },
+    {
+      "titulo": "Notificações de Síndrome do túnel do carpo",
+      "valor": 34,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2021,
+      "doenca": "Síndrome do túnel do carpo"
+    },
+    {
+      "titulo": "Notificações de Síndrome do túnel do carpo",
+      "valor": 46,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2022,
+      "doenca": "Síndrome do túnel do carpo"
+    },
+    {
+      "titulo": "Notificações de Síndrome do túnel do carpo",
+      "valor": 48,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2023,
+      "doenca": "Síndrome do túnel do carpo"
+    },
+    {
+      "titulo": "Notificações de Síndrome do túnel do carpo",
+      "valor": 53,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2024,
+      "doenca": "Síndrome do túnel do carpo"
+    },
+    {
+      "titulo": "Notificações de Síndrome do túnel do carpo",
+      "valor": 56,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2025,
+      "doenca": "Síndrome do túnel do carpo"
+    },
+    {
+      "titulo": "Notificações de Síndrome do túnel do carpo",
+      "valor": 27,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2026,
+      "doenca": "Síndrome do túnel do carpo"
+    },
+    {
+      "titulo": "Notificações de Cervicalgia",
+      "valor": 23,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2020,
+      "doenca": "Cervicalgia"
+    },
+    {
+      "titulo": "Notificações de Cervicalgia",
+      "valor": 27,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2021,
+      "doenca": "Cervicalgia"
+    },
+    {
+      "titulo": "Notificações de Cervicalgia",
+      "valor": 32,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2022,
+      "doenca": "Cervicalgia"
+    },
+    {
+      "titulo": "Notificações de Cervicalgia",
+      "valor": 35,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2023,
+      "doenca": "Cervicalgia"
+    },
+    {
+      "titulo": "Notificações de Cervicalgia",
+      "valor": 41,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2024,
+      "doenca": "Cervicalgia"
+    },
+    {
+      "titulo": "Notificações de Cervicalgia",
+      "valor": 40,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2025,
+      "doenca": "Cervicalgia"
+    },
+    {
+      "titulo": "Notificações de Cervicalgia",
+      "valor": 20,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2026,
+      "doenca": "Cervicalgia"
+    },
+    {
+      "titulo": "Notificações de Bursite de ombro",
+      "valor": 14,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2020,
+      "doenca": "Bursite de ombro"
+    },
+    {
+      "titulo": "Notificações de Bursite de ombro",
+      "valor": 17,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2021,
+      "doenca": "Bursite de ombro"
+    },
+    {
+      "titulo": "Notificações de Bursite de ombro",
+      "valor": 23,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2022,
+      "doenca": "Bursite de ombro"
+    },
+    {
+      "titulo": "Notificações de Bursite de ombro",
+      "valor": 24,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2023,
+      "doenca": "Bursite de ombro"
+    },
+    {
+      "titulo": "Notificações de Bursite de ombro",
+      "valor": 27,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2024,
+      "doenca": "Bursite de ombro"
+    },
+    {
+      "titulo": "Notificações de Bursite de ombro",
+      "valor": 26,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2025,
+      "doenca": "Bursite de ombro"
+    },
+    {
+      "titulo": "Notificações de Bursite de ombro",
+      "valor": 13,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2026,
+      "doenca": "Bursite de ombro"
+    },
+    {
+      "titulo": "Notificações de Ansiedade",
+      "valor": 22,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2020,
+      "doenca": "Ansiedade"
+    },
+    {
+      "titulo": "Notificações de Ansiedade",
+      "valor": 36,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2021,
+      "doenca": "Ansiedade"
+    },
+    {
+      "titulo": "Notificações de Ansiedade",
+      "valor": 50,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2022,
+      "doenca": "Ansiedade"
+    },
+    {
+      "titulo": "Notificações de Ansiedade",
+      "valor": 62,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2023,
+      "doenca": "Ansiedade"
+    },
+    {
+      "titulo": "Notificações de Ansiedade",
+      "valor": 78,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2024,
+      "doenca": "Ansiedade"
+    },
+    {
+      "titulo": "Notificações de Ansiedade",
+      "valor": 95,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2025,
+      "doenca": "Ansiedade"
+    },
+    {
+      "titulo": "Notificações de Ansiedade",
+      "valor": 39,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2026,
+      "doenca": "Ansiedade"
+    },
+    {
+      "titulo": "Notificações de Depressão",
+      "valor": 18,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2020,
+      "doenca": "Depressão"
+    },
+    {
+      "titulo": "Notificações de Depressão",
+      "valor": 25,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2021,
+      "doenca": "Depressão"
+    },
+    {
+      "titulo": "Notificações de Depressão",
+      "valor": 36,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2022,
+      "doenca": "Depressão"
+    },
+    {
+      "titulo": "Notificações de Depressão",
+      "valor": 50,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2023,
+      "doenca": "Depressão"
+    },
+    {
+      "titulo": "Notificações de Depressão",
+      "valor": 63,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2024,
+      "doenca": "Depressão"
+    },
+    {
+      "titulo": "Notificações de Depressão",
+      "valor": 64,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2025,
+      "doenca": "Depressão"
+    },
+    {
+      "titulo": "Notificações de Depressão",
+      "valor": 28,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2026,
+      "doenca": "Depressão"
+    },
+    {
+      "titulo": "Notificações de Burnout",
+      "valor": 15,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2020,
+      "doenca": "Burnout"
+    },
+    {
+      "titulo": "Notificações de Burnout",
+      "valor": 25,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2021,
+      "doenca": "Burnout"
+    },
+    {
+      "titulo": "Notificações de Burnout",
+      "valor": 33,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2022,
+      "doenca": "Burnout"
+    },
+    {
+      "titulo": "Notificações de Burnout",
+      "valor": 43,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2023,
+      "doenca": "Burnout"
+    },
+    {
+      "titulo": "Notificações de Burnout",
+      "valor": 53,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2024,
+      "doenca": "Burnout"
+    },
+    {
+      "titulo": "Notificações de Burnout",
+      "valor": 61,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2025,
+      "doenca": "Burnout"
+    },
+    {
+      "titulo": "Notificações de Burnout",
+      "valor": 26,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2026,
+      "doenca": "Burnout"
+    },
+    {
+      "titulo": "Notificações de Transtorno de adaptação",
+      "valor": 12,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2020,
+      "doenca": "Transtorno de adaptação"
+    },
+    {
+      "titulo": "Notificações de Transtorno de adaptação",
+      "valor": 19,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2021,
+      "doenca": "Transtorno de adaptação"
+    },
+    {
+      "titulo": "Notificações de Transtorno de adaptação",
+      "valor": 26,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2022,
+      "doenca": "Transtorno de adaptação"
+    },
+    {
+      "titulo": "Notificações de Transtorno de adaptação",
+      "valor": 36,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2023,
+      "doenca": "Transtorno de adaptação"
+    },
+    {
+      "titulo": "Notificações de Transtorno de adaptação",
+      "valor": 42,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2024,
+      "doenca": "Transtorno de adaptação"
+    },
+    {
+      "titulo": "Notificações de Transtorno de adaptação",
+      "valor": 49,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2025,
+      "doenca": "Transtorno de adaptação"
+    },
+    {
+      "titulo": "Notificações de Transtorno de adaptação",
+      "valor": 20,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2026,
+      "doenca": "Transtorno de adaptação"
+    },
+    {
+      "titulo": "Notificações de Insônia",
+      "valor": 10,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2020,
+      "doenca": "Insônia"
+    },
+    {
+      "titulo": "Notificações de Insônia",
+      "valor": 14,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2021,
+      "doenca": "Insônia"
+    },
+    {
+      "titulo": "Notificações de Insônia",
+      "valor": 20,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2022,
+      "doenca": "Insônia"
+    },
+    {
+      "titulo": "Notificações de Insônia",
+      "valor": 26,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2023,
+      "doenca": "Insônia"
+    },
+    {
+      "titulo": "Notificações de Insônia",
+      "valor": 32,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2024,
+      "doenca": "Insônia"
+    },
+    {
+      "titulo": "Notificações de Insônia",
+      "valor": 37,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2025,
+      "doenca": "Insônia"
+    },
+    {
+      "titulo": "Notificações de Insônia",
+      "valor": 16,
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": 2026,
+      "doenca": "Insônia"
+    }
+  ],
+  "graficos": [
+    {
+      "id": "ler",
+      "nome": "LER/DORT",
+      "grupo": "LER/DORT",
+      "titulo": "Notificações por doença: LER/DORT",
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": "2020–2026",
+      "tipo": "bar",
+      "horizontal": true,
+      "total": 1372,
+      "labels": [
+        "Lombalgia",
+        "Tendinite",
+        "Síndrome do túnel do carpo",
+        "Cervicalgia",
+        "Bursite de ombro"
+      ],
+      "series": [
+        {
+          "nome": "Notificações",
+          "valores": [
+            378,
+            339,
+            293,
+            218,
+            144
+          ]
+        }
+      ],
+      "detalhes": [
+        {
+          "nome": "Lombalgia",
+          "sintomas": "Dor na região lombar e rigidez ao levantar",
+          "fatorRisco": "Postura inadequada"
+        },
+        {
+          "nome": "Tendinite",
+          "sintomas": "Dor e inchaço nos tendões de punhos e mãos",
+          "fatorRisco": "Movimento repetitivo"
+        },
+        {
+          "nome": "Síndrome do túnel do carpo",
+          "sintomas": "Formigamento e dormência nos dedos",
+          "fatorRisco": "Movimento repetitivo"
+        },
+        {
+          "nome": "Cervicalgia",
+          "sintomas": "Dor e tensão no pescoço",
+          "fatorRisco": "Postura inadequada"
+        },
+        {
+          "nome": "Bursite de ombro",
+          "sintomas": "Dor ao elevar o braço",
+          "fatorRisco": "Ergonomia inadequada"
+        }
+      ]
+    },
+    {
+      "id": "mental",
+      "nome": "Saúde mental",
+      "grupo": "Saúde mental",
+      "titulo": "Notificações por doença: Saúde mental",
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": "2020–2026",
+      "tipo": "doughnut",
+      "horizontal": false,
+      "total": 1281,
+      "labels": [
+        "Ansiedade",
+        "Depressão",
+        "Burnout",
+        "Transtorno de adaptação",
+        "Insônia"
+      ],
+      "series": [
+        {
+          "nome": "Notificações",
+          "valores": [
+            382,
+            284,
+            256,
+            204,
+            155
+          ]
+        }
+      ],
+      "detalhes": [
+        {
+          "nome": "Ansiedade",
+          "sintomas": "Preocupação excessiva, inquietação e taquicardia",
+          "fatorRisco": "Sobrecarga e prazos"
+        },
+        {
+          "nome": "Depressão",
+          "sintomas": "Tristeza persistente, perda de interesse e fadiga",
+          "fatorRisco": "Isolamento"
+        },
+        {
+          "nome": "Burnout",
+          "sintomas": "Exaustão, cinismo e queda de desempenho",
+          "fatorRisco": "Jornada prolongada"
+        },
+        {
+          "nome": "Transtorno de adaptação",
+          "sintomas": "Irritabilidade e desânimo após mudanças",
+          "fatorRisco": "Sobrecarga e prazos"
+        },
+        {
+          "nome": "Insônia",
+          "sintomas": "Dificuldade para dormir e sono não reparador",
+          "fatorRisco": "Jornada prolongada"
+        }
+      ]
+    },
+    {
+      "id": "fatores_risco",
+      "nome": "Fatores de risco",
+      "grupo": "DoencaOcupacional.fatorRisco",
+      "titulo": "Notificações por fator de risco",
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": "2020–2026",
+      "tipo": "bar",
+      "horizontal": true,
+      "total": 2653,
+      "labels": [
+        "Movimento repetitivo",
+        "Postura inadequada",
+        "Sobrecarga e prazos",
+        "Jornada prolongada",
+        "Isolamento",
+        "Ergonomia inadequada"
+      ],
+      "series": [
+        {
+          "nome": "Notificações",
+          "valores": [
+            632,
+            596,
+            586,
+            411,
+            284,
+            144
+          ]
+        }
+      ]
+    },
+    {
+      "id": "por_ano",
+      "nome": "Notificações por ano",
+      "grupo": "LER/DORT e Saúde mental",
+      "titulo": "Notificações por ano de referência",
+      "fonte": "Dados fictícios para demonstração",
+      "anoReferencia": "2020–2026",
+      "tipo": "line",
+      "horizontal": false,
+      "total": 2653,
+      "labels": [
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "series": [
+        {
+          "nome": "LER/DORT",
+          "valores": [
+            138,
+            162,
+            205,
+            232,
+            249,
+            259,
+            127
+          ]
+        },
+        {
+          "nome": "Saúde mental",
+          "valores": [
+            77,
+            119,
+            165,
+            217,
+            268,
+            306,
+            129
+          ]
+        }
+      ]
+    }
+  ]
+}

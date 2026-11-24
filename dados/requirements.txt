@@ -1,0 +1,5 @@
+# Modo demo (padrão) não precisa de nada além do Python.
+# Modo --real:
+pysus==2.11.7
+pandas
+pyarrow
