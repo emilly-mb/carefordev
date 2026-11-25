@@ -1,4 +1,3 @@
-// Sem banco de dados: o perfil e a pontuação ficam salvos no próprio navegador (localStorage).
 // Os dados são por aparelho/navegador: não são compartilhados entre dispositivos.
 const CHAVE_USUARIO = "carefordev:usuario";
 let usuario = { nome: "", idade: "", genero: "", profissao: "", turno_trabalho: "", pontuacao: 0 };
