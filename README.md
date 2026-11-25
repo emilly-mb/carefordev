@@ -31,9 +31,9 @@ Instalar expo go no celular para versão mobile
 
 - Ir até o path app_rn onde esta configurado para mobile e instalar npm install
 
-Atualizar para expo sdk 54
+Atualizar para expo sdk 58
 ```powershell
-npx expo install expo@^54.0.0 --fix
+npx expo install expo@^58.0.0 --fix
 ```
 Verificando se ocorreu a atualização certo: 
 
