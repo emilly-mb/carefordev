@@ -63,16 +63,6 @@ export default function SaudeScreen() {
               </Text>
             </View>
           ))}
-
-          <Text style={styles.fonte}>
-            Fonte: {categoria.fonte}, {dados.ocupacao}. Ano de referência: {categoria.anoReferencia}.{' '}
-            Valor total: {categoria.total.toLocaleString('pt-BR')} notificações. Gerado em {dados.gerado_em}.
-          </Text>
-          {dados.exemplo && (
-            <Text style={styles.aviso}>
-              Valores fictícios para demonstração. Para dados reais, rode dados/gerar_dados_saude.py --real.
-            </Text>
-          )}
         </View>
       </ScrollView>
     </SafeAreaView>
