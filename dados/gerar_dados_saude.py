@@ -152,9 +152,8 @@ def salvar(dados: dict) -> None:
         log.info("JSON gerado em %s", destino)
 
 
-# --------------------------------------------------------------------------- #
-# Modo DEMO: dados inventados, reprodutíveis (semente fixa)
-# --------------------------------------------------------------------------- #
+# Modo dados inventados, utilizados no app
+
 BASE_TOTAL = {  # total inventado 2020–2026 por doença
     "Lombalgia": 410, "Tendinite": 360, "Síndrome do túnel do carpo": 280,
     "Cervicalgia": 230, "Bursite de ombro": 140,
@@ -182,13 +181,11 @@ def gerar_demo() -> dict:
     return montar_json(linhas, "Dados fictícios para demonstração", exemplo=True)
 
 
-# --------------------------------------------------------------------------- #
-# Modo REAL: DATASUS/SINAN via pysus (import só aqui, para o demo não exigir)
-# --------------------------------------------------------------------------- #
+# Modo REAL: DATASUS/SINAN via pysus (versão não utilizada no ap)
+
 COL_CBO = ["ID_OCUPA_N"]
 
-# >>> CONFIRA estes nomes na 1ª execução: se algum não existir, o log lista as
-# colunas reais do arquivo e você só ajusta aqui. <<<
+
 AGRAVOS = {
     "LERD": (LER, ["LOC_ANAT", "REGIAO_ANA", "PARTE_CORP"]),
     "MENT": (MENTAL, ["CID_10", "DIAG_CID", "AGRAVO_CID"]),
