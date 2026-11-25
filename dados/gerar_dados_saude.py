@@ -11,7 +11,7 @@ Dois modos:
   python gerar_dados_saude.py --real    -> REAL: DATASUS/SINAN via pysus 2.11.7
                                            (CBO 2124-05, 2020 a 2026)
 
-O mesmo JSON é gravado nos dois destinos (lidos sem API nem banco):
+O mesmo JSON é gravado nos dois destinos:
   ../paginas/data/dados_saude.json      (saude.js + Chart.js)
   ../app_rn/src/data/dados_saude.json   (SaudeScreen.js + React Native)
 
