@@ -1,4 +1,4 @@
-# Modo demo (padrão) não precisa de nada além do Python.
+# Demonstração não precisa de dados reais. Para dados reais, vai precisar rodar gerar_dados_saude.py --real e instalar pysus.
 # Modo --real:
 pysus==2.11.7
 pandas

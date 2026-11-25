@@ -1,7 +1,6 @@
 // Aba Saúde: lê o JSON estático gerado por dados/gerar_dados_saude.py e desenha com Chart.js.
-// Os textos seguem o diagrama de classes: Estatistica (titulo, valor, fonte, anoReferencia)
-// e DoencaOcupacional (nome, sintomas, fatorRisco). Sem API nem banco: só um servidor de arquivos
-// estáticos (fetch não funciona em file://).
+// Diagrama de classes: Estatistica (titulo, valor, fonte, anoReferencia)
+// e DoencaOcupacional (nome, sintomas, fatorRisco).
 const DADOS_URL = 'data/dados_saude.json';
 
 const PALETA = ['#3f7965', '#d98b5f', '#69a48f', '#c9a24a', '#7b9bb0', '#b07aa1'];
@@ -39,7 +38,7 @@ async function iniciar() {
     console.error(erro);
     select.innerHTML = '<option value="">Dados indisponíveis</option>';
     status.textContent =
-      'Não foi possível carregar os dados. Abra a página por um servidor (ex.: python -m http.server), não por file://.';
+      'Não foi possível carregar os dados. Abra a página pelo servidor';
     document.getElementById('health-source').textContent = erro.message;
   }
 }
@@ -88,7 +87,7 @@ function mostrarDetalhes(grafico) {
   lista.hidden = lista.children.length === 0;
 }
 
-// ---- Configuração Chart.js: { type, data: { labels, datasets }, options } ----
+// Configuração Chart.js: { type, data: { labels, datasets }, options }
 function montarConfig(grafico) {
   const tipo = grafico.tipo || 'bar';
   const varias = grafico.series.length > 1;
@@ -161,7 +160,7 @@ function textoTooltip(ctx, tipo, horizontal) {
   return `${ctx.dataset.label}: ${valor}`;
 }
 
-// <canvas> não é lido por leitores de tela: resumimos os dados no aria-label.
+// <canvas> não é lido por leitores de tela, então descrevemos o gráfico em texto alternativo (aria-label).
 function descreverParaLeitorDeTela(grafico) {
   const partes = grafico.labels.map((rotulo, i) =>
     `${rotulo}: ${grafico.series.map((s) =>
